@@ -8,16 +8,10 @@ public class UltraEmojiCombat {
         l[3] = new Lutador("Vector","Estado Unidos",20,1.70f,81.1f,13,12,1);
         l[4] = new Lutador("Paul","Brasil",20,1.55f,119.1f,1,4,1);
         l[5] = new Lutador("Lovato","Canadá",20,1.80f,105.1f,6,2,3);
-        l[0].apresentar();
-        l[0].perderLuta();
-        l[0].perderLuta();
-        l[1].apresentar();
-        l[1].perderLuta();
-        l[0].perderLuta();
-        l[2].apresentar();
-        l[3].apresentar();
-        l[4].apresentar();
-        l[5].apresentar();
+        
+        Luta fight = new Luta();
+        fight.marcarLuta(l[2], l[3]);
+        fight.lutar();
     }
     
 }
